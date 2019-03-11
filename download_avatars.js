@@ -18,11 +18,11 @@ function getRepoContributors(repoOwner, repoName, cb) {
   };
   // check to see if input for both a username and repo actually exists
   if (owner === undefined || repo === undefined){
-    console.log("ERROR! You have to input both a user and a repo name!")
+    console.log("ERROR! You have to input both a user and a repo name!");
   } else {
     request(options, function(err, res, body) {
       // parse the JSON coming from API
-      var initObj = JSON.parse(body)
+      var initObj = JSON.parse(body);
       // synchronously create a directory for the avatars.
       fs.mkdirSync('./avatars');
       // feed the array of contributor objects to callback function
