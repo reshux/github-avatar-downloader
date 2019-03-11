@@ -1,0 +1,20 @@
+{
+  "name": "avatar",
+  "version": "1.0.0",
+  "description": "## Problem Statement",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reshux/github-avatar-downloader.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reshux/github-avatar-downloader/issues"
+  },
+  "homepage": "https://github.com/reshux/github-avatar-downloader#readme"
+}
