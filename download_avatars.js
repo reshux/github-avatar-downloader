@@ -23,7 +23,10 @@ function getRepoContributors(repoOwner, repoName, cb) {
       // parse the JSON coming from API
       var initObj = JSON.parse(body);
       // synchronously create a directory for the avatars.
-      fs.mkdirSync('./avatars');
+      if (!fs.existsSync('./avatars')) {
+        fs.mkdirSync('./avatars');
+      }
+
       // feed the array of contributor objects to callback function
       cb(err, initObj);
   });
